@@ -1,0 +1,22 @@
+#navigation a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: white; 
+    transition: width 0.3s ease-in-out;
+}
+
+#navigation a.active::after {
+    width: 100%;
+}
